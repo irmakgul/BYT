@@ -9,14 +9,13 @@ namespace CalculatorApp
     {
         public static void Main(string[] args)
         {
-            // 3 argüman bekleniyor: A B op
+            
             if (args.Length != 3)
             {
                 Console.Error.WriteLine("Kullanım: calculator <A> <B> <op:+-*/>");
                 return;
             }
 
-            // A ve B sayı olmalı
             if (!double.TryParse(args[0], NumberStyles.Float, CultureInfo.InvariantCulture, out var a) ||
                 !double.TryParse(args[1], NumberStyles.Float, CultureInfo.InvariantCulture, out var b))
             {
@@ -24,7 +23,7 @@ namespace CalculatorApp
                 return;
             }
 
-            // İşlem operatörü (ilk karakter)
+
             char op = args[2][0];
 
             try
@@ -32,7 +31,7 @@ namespace CalculatorApp
                 var calc = new Calculator(a, b, op);
                 var result = calc.Compute();
 
-                // Sonuç yazdırılır
+
                 Console.WriteLine(result.ToString(CultureInfo.InvariantCulture));
             }
             catch (DivideByZeroException)
