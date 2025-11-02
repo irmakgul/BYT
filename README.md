@@ -7,8 +7,8 @@ The solution contains two main modules: a Geometry (Shapes) module and a Calcula
 Both modules are fully tested with NUnit.
 
 ## Geometry Module
--Tutorial_Shapes_Project_Code.cs – Contains IShape interface and shape classes (Sphere, Cube, Cylinder, Rectangle) 
--Tutorial_Shapes_Project_CodeForTests.cs – Additional implementations used for testing
+-Tutorial_Shapes_Project_Code.cs – Contains IShape interface and shape classes
+-Tutorial_Shapes_Project_CodeForTests.cs – Contains NUnit test classes used to test the shape classes
 
 ## Calculator Module 
 Calculator.cs – Performs basic arithmetic: +, -, *, /
