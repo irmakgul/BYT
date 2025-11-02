@@ -11,9 +11,9 @@ Both modules are fully tested with NUnit.
 -Tutorial_Shapes_Project_CodeForTests.cs – Contains NUnit test classes used to test the shape classes
 
 ## Calculator Module 
-Calculator.cs – Performs basic arithmetic: +, -, *, /
-CalculatorTests.cs – NUnit tests verifying all calculator functions 
-Program.cs – Console program that runs the calculator and shows the result
+-Calculator.cs – Performs basic arithmetic: +, -, *, /
+-CalculatorTests.cs – NUnit tests verifying all calculator functions 
+-Program.cs – Console program that runs the calculator and shows the result
 
 ## Technologies Used
 - C# / .NET 8
