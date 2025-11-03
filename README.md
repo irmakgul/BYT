@@ -20,3 +20,10 @@ Both modules are fully tested with NUnit.
 - NUnit Framework
 - Microsoft.NET.Test.Sdk
 - JetBrains Rider IDE
+
+## Running
+Running Tests:
+dotnet test
+
+Running Calculator:
+dotnet run
