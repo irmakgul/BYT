@@ -12,14 +12,14 @@ namespace CalculatorApp
             
             if (args.Length != 3)
             {
-                Console.Error.WriteLine("Kullanım: calculator <A> <B> <op:+-*/>");
+                Console.Error.WriteLine("Usage: calculator <A> <B> op:+-*/");
                 return;
             }
 
             if (!double.TryParse(args[0], NumberStyles.Float, CultureInfo.InvariantCulture, out var a) ||
                 !double.TryParse(args[1], NumberStyles.Float, CultureInfo.InvariantCulture, out var b))
             {
-                Console.Error.WriteLine("Hata: A ve B sayısal olmalıdır (örn. 12.5).");
+                Console.Error.WriteLine("Error: A and B must be numeric");
                 return;
             }
 
@@ -36,11 +36,11 @@ namespace CalculatorApp
             }
             catch (DivideByZeroException)
             {
-                Console.Error.WriteLine("Hata: Sıfıra bölme.");
+                Console.Error.WriteLine("Error: Division by zero.");
             }
             catch (ArgumentException ex)
             {
-                Console.Error.WriteLine($"Hata: {ex.Message}");
+                Console.Error.WriteLine($"Error: {ex.Message}");
             }
         }
     }
